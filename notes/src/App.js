@@ -8,7 +8,8 @@ import Home from "./Pages/Home";
 import Notes from "./Pages/Notes";
 import Previousyear from "./Pages/Previousyear";
 import Contact from "./Pages/Contact";
-import Footer from './MyComponents/Footer'
+import Footer from "./MyComponents/Footer";
+import Error404 from "./Pages/Error404";
 
 function App() {
   return (
@@ -21,10 +22,10 @@ function App() {
             <Route path="/notes" element={<Notes />} />
             <Route path="/pyqs" element={<Previousyear />} />
             <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error404 />} />
           </Routes>
           <div className="mt-auto">
-
-          <Footer />
+            <Footer />
           </div>
         </Router>
       </NoteState>

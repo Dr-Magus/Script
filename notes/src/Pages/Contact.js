@@ -49,7 +49,7 @@ function Contact() {
   };
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="">
       <div className="bg-slate-50 p-10 px-5 sm:px-12 text-sm ">
         <div className="sent-success">
           <Transition
