@@ -24,7 +24,7 @@ function Navbar() {
       </Link>
 
       <div className="inline">
-        <div className="hidden md:flex space-x-3 lg:space-x-10">
+        <div className="hidden md:flex space-x-8 lg:space-x-10">
           {navItem.map((item, idx) => {
             return (
               <div

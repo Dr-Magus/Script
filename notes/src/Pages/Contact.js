@@ -48,7 +48,7 @@ function Contact() {
     });
   };
 
-  document.title = "SCRIPT - CONTACT";
+  document.title = "Script - Contact";
 
   return (
     <div className="">

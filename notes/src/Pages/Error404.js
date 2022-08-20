@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Error404() {
-  document.title = "SCRIPT - 404";
+  document.title = "Script - 404";
   return (
     <div className="absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-44 md:-translate-y-60 border p-5 rounded-br-full rounded-t-2xl bg-blue-200 flex flex-col md:px-12 min-w-[11rem]">
       <h1 className="text-blue-500 text-4xl md:text-9xl">404</h1>

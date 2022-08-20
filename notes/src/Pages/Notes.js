@@ -2,7 +2,7 @@ import React from "react";
 import Material from "../MyComponents/Material";
 
 export default function Notes() {
-  document.title = "SCRIPT - NOTES";
+  document.title = "Script - Notes";
 
   return (
     <div className="mb-5">
