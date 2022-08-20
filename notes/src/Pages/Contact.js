@@ -48,6 +48,8 @@ function Contact() {
     });
   };
 
+  document.title = "SCRIPT - CONTACT";
+
   return (
     <div className="">
       <div className="bg-slate-50 p-10 px-5 sm:px-12 text-sm ">
@@ -147,7 +149,6 @@ function Contact() {
           </form>
         </div>
       </div>
-
     </div>
   );
 }

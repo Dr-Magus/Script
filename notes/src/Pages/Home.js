@@ -10,6 +10,8 @@ function Body() {
     "Apple Tv",
   ];
 
+  document.title = "SCRIPT - HOME";
+
   return (
     <div className="mb-5">
       <img
@@ -19,7 +21,9 @@ function Body() {
       />
       <div className="px-5 mt-4 sm:px-12 text-sm md:px-24">
         <div className="font-medium leading-relaxed">
-          <span className="uppercase md:text-base font-bold">Entertainment</span>
+          <span className="uppercase md:text-base font-bold">
+            Entertainment
+          </span>
           <div className="w-full mb-4 border border-slate-900"></div>
         </div>
         <div className="flex flex-col md:flex-wrap md:flex-row md:gap-x-[2%]">
