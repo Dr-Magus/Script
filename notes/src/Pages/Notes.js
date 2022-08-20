@@ -1,10 +1,9 @@
 import React from "react";
-
-import Material from "./Material";
+import Material from "../MyComponents/Material"
 
 export default function Notes() {
   return (
-    <div>
+    <div className="mb-5">
       <Material heading="Notes" mtype="nts" />
     </div>
   );

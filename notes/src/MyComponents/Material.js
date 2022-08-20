@@ -42,8 +42,8 @@ function Material({ heading, mtype }) {
   };
 
   return (
-    <div className="p-4 relative sm:px-12 md:px-24 text-sm">
-      <span className="md:text-md lg:text-lg">{heading}</span>
+    <div className="p-5 relative sm:px-12 md:px-24 text-sm">
+      <span className="md:text-md lg:text-lg font-semibold">{heading}</span>
       <div className="w-full border border-slate-900"></div>
       <div className="p-2 space-y-1">
         <div>

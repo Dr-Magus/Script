@@ -1,7 +1,6 @@
 import React, { useState, useRef, Fragment } from "react";
 import emailjs from "@emailjs/browser";
 import { Transition } from "@headlessui/react";
-import Footer from "./Footer";
 
 function Contact() {
   const initialState = {
@@ -148,9 +147,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <div className="mt-auto">
-        <Footer />
-      </div>
+
     </div>
   );
 }

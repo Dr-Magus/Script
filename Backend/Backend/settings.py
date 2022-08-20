@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'notes.apps.NotesConfig', # app name
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    "build"
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(REAL_BASE_DIR, "notes", 'build')
+            os.path.join(BASE_DIR, 'build')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -126,7 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIR = [
-    os.path.join(REAL_BASE_DIR, 'notes', 'build', 'static')
+    os.path.join(BASE_DIR, 'build', 'static')
 ]
 
 # Default primary key field type
