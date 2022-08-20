@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+.active {
+  @apply !text-secondary underline decoration-secondary underline-offset-4
+}
+
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');

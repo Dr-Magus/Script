@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from "react-router-dom";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -15,16 +15,23 @@ function Navbar() {
 
   return (
     <div className="bg-primary text-slate-100 py-2 px-5 sm:px-12 md:px-24 flex text-center items-center justify-between w-full h-18 md:h-[3rem]">
-      <Link to="/" id="logo" className="text-sm md:text-base font-bold text-secondary tracking-widest">
+      <Link
+        to="/"
+        id="logo"
+        className="text-sm md:text-base font-bold text-secondary tracking-widest"
+      >
         SCRIPT
       </Link>
 
       <div className="inline">
-        <div className="hidden md:flex text-sm space-x-3 lg:space-x-10">
+        <div className="hidden md:flex space-x-3 lg:space-x-10">
           {navItem.map((item, idx) => {
             return (
-              <div key={idx} className="text-white px-2 hover:text-secondary">
-                <Link to={item.to}>{item.name}</Link>
+              <div
+                key={idx}
+                className="text-white px-2 hover:text-secondary uppercase text-xs"
+              >
+                <NavLink to={item.to}>{item.name}</NavLink>
               </div>
             );
           })}
@@ -34,7 +41,11 @@ function Navbar() {
             <>
               <div>
                 <Menu.Button className="">
-                  {!open ? <MenuIcon fontSize="small" /> : <CloseIcon fontSize="small" className="text-secondary" />}
+                  {!open ? (
+                    <MenuIcon fontSize="small" />
+                  ) : (
+                    <CloseIcon fontSize="small" className="text-secondary" />
+                  )}
                 </Menu.Button>
               </div>
               <Transition
@@ -55,16 +66,14 @@ function Navbar() {
                     return (
                       <Menu.Item key={idx}>
                         {({ active }) => (
-                          <Link
+                          <NavLink
                             to={item.to}
                             className={`${
-                              active
-                                ? "bg-primary text-secondary"
-                                : "text-gray-900"
-                            } group flex w-full items-center active:text-secondary px-5 sm:px-12 py-2 text-sm`}
+                              active ? "bg-primary text-secondary": "text-black"
+                            } group flex w-full items-center px-5 sm:px-12 py-2 text-sm`}
                           >
                             {item.name}
-                          </Link>
+                          </NavLink>
                         )}
                       </Menu.Item>
                     );
